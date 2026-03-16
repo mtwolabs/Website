@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Terms of Service &ndash; MTWO Labs GmbH</title>
+  <style>
+    @font-face {
+      font-family: 'Commit Mono';
+      src: url('fonts/CommitMono-400-Regular.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; cursor: inherit; }
+
+    ::selection { background: #a0616a; color: #fff; }
+
+    body {
+      font-family: 'Commit Mono', monospace;
+      color: #aaa;
+      background: #0a0a0c;
+      line-height: 1.7;
+      font-size: 0.95rem;
+      cursor: url('cursor.svg') 16 16, crosshair;
+    }
+
+    #ocean-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      opacity: 0;
+      transition: opacity 1.2s ease;
+    }
+
+    #ocean-canvas.shader-ready {
+      opacity: 1;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 80px 24px 48px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.5px;
+      margin-bottom: 32px;
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #ccc;
+      margin-top: 32px;
+      margin-bottom: 8px;
+    }
+
+    p, li { margin-bottom: 8px; }
+
+    ul, ol {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+
+    a { color: #a0616a; text-decoration: none; }
+    a:hover { color: #c07a83; text-decoration: underline; }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 24px;
+      color: #444;
+      font-size: 0.85rem;
+    }
+
+    .back-link:hover { color: #666; }
+
+    @media (max-width: 600px) {
+      .container { padding: 48px 20px 32px; }
+      h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="ocean-canvas" data-clouds="false"></canvas>
+  <div class="container">
+
+    <a href="index.html" class="back-link">&larr; Back</a>
+
+    <h1>Terms of Service</h1>
+
+    <p>Effective: March 16, 2026</p>
+
+    <h2>1. Scope</h2>
+    <p>
+      These Terms of Service apply to all services and products provided by
+      MTWO Labs GmbH, Switzerland (&ldquo;we&rdquo;, &ldquo;us&rdquo;). By using our services,
+      you agree to these terms.
+    </p>
+
+    <h2>2. Eligibility</h2>
+    <p>
+      You must be at least 18 years old to use our services. By creating an account
+      or making a purchase, you confirm that you meet this age requirement.
+    </p>
+
+    <h2>3. User Accounts</h2>
+    <ul>
+      <li>You are responsible for maintaining the confidentiality of your account credentials.</li>
+      <li>You are responsible for all activity that occurs under your account.</li>
+      <li>You must notify us immediately of any unauthorized use of your account.</li>
+      <li>We reserve the right to suspend or terminate accounts that violate these terms.</li>
+    </ul>
+
+    <h2>4. Contract Formation</h2>
+    <p>
+      A contract is formed when you place an order and payment is successfully
+      processed. You will receive a confirmation by email.
+    </p>
+
+    <h2>5. Services and Pricing</h2>
+    <ul>
+      <li>Service descriptions are provided on the respective product pages.</li>
+      <li>All prices are quoted in the indicated currency. VAT is shown separately where applicable.</li>
+      <li>We reserve the right to change prices. Existing contracts remain unaffected.</li>
+    </ul>
+
+    <h2>6. Payment Terms</h2>
+    <p>
+      Payments are processed through <a href="https://stripe.com" target="_blank" rel="noopener">Stripe</a>.
+      Payment is due upon contract formation. By purchasing, you accept
+      <a href="https://stripe.com/legal/consumer" target="_blank" rel="noopener">Stripe&rsquo;s Terms of Service</a>.
+    </p>
+
+    <h2>7. Subscriptions</h2>
+    <ul>
+      <li>Subscriptions renew automatically at the end of the billing period unless cancelled beforehand.</li>
+      <li>Cancellation is possible at any time and takes effect at the end of the current billing period.</li>
+      <li>No cancellation fees apply.</li>
+    </ul>
+
+    <h2>8. Free Trials</h2>
+    <p>
+      If a free trial is offered, it will automatically convert to a paid subscription
+      at the end of the trial period unless cancelled beforehand. You will be notified
+      before any charge is applied.
+    </p>
+
+    <h2>9. Refunds</h2>
+    <p>
+      Refunds may be requested within 30 days of purchase by emailing
+      <a href="mailto:info@mtwo.io">info@mtwo.io</a>. After review,
+      refunds are issued via the original payment method. Refunds may not be
+      available for fully delivered digital services.
+    </p>
+
+    <h2>10. Usage Rights</h2>
+    <p>
+      Upon purchase, you receive a non-exclusive, non-transferable right to use
+      the acquired services. All intellectual property rights remain with MTWO Labs GmbH.
+    </p>
+
+    <h2>11. Prohibited Use</h2>
+    <p>You agree not to:</p>
+    <ul>
+      <li>Use our services for any unlawful purpose or in violation of any applicable laws.</li>
+      <li>Reverse engineer, decompile, or disassemble any part of our services.</li>
+      <li>Attempt to gain unauthorized access to our systems or other users&rsquo; accounts.</li>
+      <li>Resell, sublicense, or redistribute our services without prior written consent.</li>
+      <li>Use our services in a way that could damage, disable, or impair them.</li>
+    </ul>
+
+    <h2>12. Limitation of Liability</h2>
+    <p>
+      Our services are provided &ldquo;as is&rdquo;. To the extent permitted by law, we are
+      not liable for indirect damages, lost profits, or data loss. Our liability is
+      limited to the amount you have paid for the affected service in the past 12 months.
+    </p>
+
+    <h2>13. Availability</h2>
+    <p>
+      We strive to maintain uninterrupted service but cannot guarantee 100% availability.
+    </p>
+
+    <h2>14. Force Majeure</h2>
+    <p>
+      We are not liable for any failure or delay in performance resulting from causes
+      beyond our reasonable control, including but not limited to natural disasters,
+      war, terrorism, pandemics, power failures, or internet outages.
+    </p>
+
+    <h2>15. Data Protection</h2>
+    <p>
+      The processing of personal data is governed by our
+      <a href="privacy.html">Privacy Policy</a>.
+    </p>
+
+    <h2>16. Changes to Terms</h2>
+    <p>
+      We reserve the right to amend these terms. In the event of material changes,
+      we will notify you by email or through our website. Continued use of our
+      services after notification constitutes acceptance of the updated terms.
+    </p>
+
+    <h2>17. Severability</h2>
+    <p>
+      If any provision of these terms is found to be invalid or unenforceable, the
+      remaining provisions shall continue in full force and effect.
+    </p>
+
+    <h2>18. Governing Law and Jurisdiction</h2>
+    <p>
+      Swiss law applies. The place of jurisdiction is the registered office of
+      MTWO Labs GmbH in Switzerland, to the extent permitted by law.
+    </p>
+
+    <h2>19. Contact</h2>
+    <p>
+      MTWO Labs GmbH, Switzerland<br>
+      CHE-265.855.350<br>
+      Email: <a href="mailto:info@mtwo.io">info@mtwo.io</a>
+    </p>
+
+  </div>
+  <script type="module" src="background.js"></script>
+</body>
+</html>

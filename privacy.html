@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Privacy Policy &ndash; MTWO Labs GmbH</title>
+  <style>
+    @font-face {
+      font-family: 'Commit Mono';
+      src: url('fonts/CommitMono-400-Regular.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; cursor: inherit; }
+
+    ::selection { background: #a0616a; color: #fff; }
+
+    body {
+      font-family: 'Commit Mono', monospace;
+      color: #aaa;
+      background: #0a0a0c;
+      line-height: 1.7;
+      font-size: 0.95rem;
+      cursor: url('cursor.svg') 16 16, crosshair;
+    }
+
+    #ocean-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      opacity: 0;
+      transition: opacity 1.2s ease;
+    }
+
+    #ocean-canvas.shader-ready {
+      opacity: 1;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 80px 24px 48px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.5px;
+      margin-bottom: 32px;
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #ccc;
+      margin-top: 32px;
+      margin-bottom: 8px;
+    }
+
+    p, li { margin-bottom: 8px; }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+
+    a { color: #a0616a; text-decoration: none; }
+    a:hover { color: #c07a83; text-decoration: underline; }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 24px;
+      color: #444;
+      font-size: 0.85rem;
+    }
+
+    .back-link:hover { color: #666; }
+
+    @media (max-width: 600px) {
+      .container { padding: 48px 20px 32px; }
+      h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="ocean-canvas" data-clouds="false"></canvas>
+  <div class="container">
+
+    <a href="index.html" class="back-link">&larr; Back</a>
+
+    <h1>Privacy Policy</h1>
+
+    <p>Effective: March 16, 2026</p>
+
+    <p>
+      MTWO Labs GmbH (&ldquo;we&rdquo;, &ldquo;us&rdquo;), based in Switzerland, operates
+      our websites and related services. This Privacy Policy describes what personal
+      data we collect, how we use it, and how we protect it.
+    </p>
+
+    <h2>1. Data We Collect</h2>
+    <p>We may collect the following personal data:</p>
+    <ul>
+      <li><strong>Contact information</strong> (name, email address) &ndash; when you contact us or create an account.</li>
+      <li><strong>Payment data</strong> &ndash; processed by our payment provider Stripe. We do not store credit card data.</li>
+      <li><strong>Usage data</strong> (IP address, browser type, pages visited) &ndash; collected automatically when you visit.</li>
+    </ul>
+
+    <h2>2. Legal Basis for Processing</h2>
+    <p>We process your data on the following legal bases:</p>
+    <ul>
+      <li><strong>Contract performance</strong> &ndash; to provide our services and process payments.</li>
+      <li><strong>Legitimate interest</strong> &ndash; to improve our services, ensure security, and prevent fraud.</li>
+      <li><strong>Legal obligation</strong> &ndash; to comply with applicable laws and regulations.</li>
+      <li><strong>Consent</strong> &ndash; where you have explicitly given consent, which you may withdraw at any time.</li>
+    </ul>
+
+    <h2>3. Purpose of Data Processing</h2>
+    <p>We use your data for:</p>
+    <ul>
+      <li>Providing and operating our services.</li>
+      <li>Processing payments and managing subscriptions.</li>
+      <li>Communication and support.</li>
+      <li>Compliance with legal obligations.</li>
+    </ul>
+
+    <h2>4. Third-Party Sharing</h2>
+    <p>We only share your data with:</p>
+    <ul>
+      <li>
+        <strong>Stripe</strong> (payment processing): PCI DSS Level 1 certified.
+        Stripe processes payment data directly as a data processor under a
+        Data Processing Agreement. Stripe is based in the United States; data
+        transfers are safeguarded by Standard Contractual Clauses (SCCs).
+        See <a href="https://stripe.com/privacy" target="_blank" rel="noopener">Stripe&rsquo;s Privacy Policy</a>.
+      </li>
+      <li><strong>Hosting providers</strong> &ndash; our infrastructure providers process data on our behalf under data processing agreements.</li>
+      <li><strong>Authorities</strong>, where required by law.</li>
+    </ul>
+    <p>We do not sell your data to third parties.</p>
+
+    <h2>5. International Data Transfers</h2>
+    <p>
+      Some of our service providers (including Stripe) are based outside of Switzerland
+      and the EEA. Where personal data is transferred internationally, we ensure
+      appropriate safeguards are in place, such as Standard Contractual Clauses (SCCs)
+      or transfers to countries with an adequate level of data protection as recognized
+      by the Swiss Federal Data Protection and Information Commissioner (FDPIC).
+    </p>
+
+    <h2>6. Data Security</h2>
+    <p>
+      All connections are TLS/HTTPS encrypted. Payment data is processed
+      exclusively by Stripe. We implement appropriate technical and organizational
+      measures to protect your personal data.
+    </p>
+
+    <h2>7. Data Retention</h2>
+    <p>
+      We retain data only as long as necessary for the stated purposes or as
+      required by legal retention periods. When data is no longer needed, it is
+      securely deleted or anonymized.
+    </p>
+
+    <h2>8. Your Rights</h2>
+    <p>Under the Swiss Federal Act on Data Protection (nDSG) and, where applicable, the GDPR, you have the right to:</p>
+    <ul>
+      <li>Access your personal data.</li>
+      <li>Rectify inaccurate data.</li>
+      <li>Request deletion of your data.</li>
+      <li>Object to or restrict processing.</li>
+      <li>Data portability.</li>
+      <li>Withdraw consent at any time.</li>
+    </ul>
+    <p>
+      To exercise these rights, contact us at
+      <a href="mailto:info@mtwo.io">info@mtwo.io</a>.
+    </p>
+    <p>
+      You also have the right to lodge a complaint with the Swiss Federal Data
+      Protection and Information Commissioner (FDPIC) at
+      <a href="https://www.edoeb.admin.ch" target="_blank" rel="noopener">www.edoeb.admin.ch</a>.
+    </p>
+
+    <h2>9. Cookies and Tracking</h2>
+    <p>We do not use cookies or tracking technologies.</p>
+
+    <h2>10. Automated Decision-Making</h2>
+    <p>We do not use automated decision-making or profiling.</p>
+
+    <h2>11. Children&rsquo;s Data</h2>
+    <p>
+      Our services are not directed at individuals under the age of 18. We do not
+      knowingly collect personal data from minors. If we become aware that we have
+      collected data from a minor, we will delete it promptly.
+    </p>
+
+    <h2>12. Changes</h2>
+    <p>
+      We reserve the right to update this policy at any time. In the event of
+      material changes, we will notify you by email or through our website.
+      The current version is always available on this page.
+    </p>
+
+    <h2>13. Responsible Entity</h2>
+    <p>
+      MTWO Labs GmbH, Switzerland<br>
+      CHE-265.855.350<br>
+      Email: <a href="mailto:info@mtwo.io">info@mtwo.io</a>
+    </p>
+
+  </div>
+  <script type="module" src="background.js"></script>
+</body>
+</html>
