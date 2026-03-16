@@ -20,6 +20,9 @@
       max-width: 600px;
       margin: 0 auto;
       padding: 80px 24px 48px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
     h1 {
@@ -31,25 +34,42 @@
 
     .tagline { color: #666; margin-top: 8px; }
 
-    .section { margin-top: 48px; }
-
-    h2 {
-      font-size: 1rem;
-      font-weight: 600;
-      color: #888;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 8px;
-    }
-
     a { color: #6ea8fe; text-decoration: none; }
     a:hover { text-decoration: underline; }
 
     footer {
-      margin-top: 64px;
+      margin-top: auto;
+      padding-top: 48px;
       color: #444;
       font-size: 0.8rem;
     }
+
+    .footer-links {
+      margin-top: 8px;
+      display: flex;
+      gap: 16px;
+    }
+
+    .footer-links a { color: #444; font-size: 0.8rem; }
+    .footer-links a:hover { color: #666; }
+
+    details {
+      margin-top: 24px;
+      color: #555;
+      font-size: 0.85rem;
+    }
+
+    summary {
+      cursor: pointer;
+      list-style: none;
+      color: #444;
+      font-size: 0.8rem;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+    summary:hover { color: #666; }
+
+    .detail-content { margin-top: 12px; line-height: 1.7; }
 
     @media (max-width: 600px) {
       .container { padding: 48px 20px 32px; }
@@ -63,17 +83,17 @@
     <h1>MTWO Labs GmbH</h1>
     <p class="tagline">Custom Software Solutions</p>
 
-    <div class="section">
-      <h2>Contact</h2>
-      <p><a href="mailto:info@mtwolabs.io">info@mtwolabs.io</a></p>
-    </div>
+    <footer>
+      <p>&copy; 2026 MTWO Labs GmbH &middot; Switzerland</p>
 
-    <div class="section">
-      <h2>Policies</h2>
-      <p>Refunds may be requested within 30 days of purchase by contacting us. Subscriptions can be cancelled at any time and take effect at the end of the current billing period. No cancellation fees apply.</p>
-    </div>
-
-    <footer>&copy; 2026 MTWO Labs GmbH &middot; Switzerland</footer>
+      <details>
+        <summary>Contact &amp; Policies</summary>
+        <div class="detail-content">
+          <p>Contact: <a href="mailto:info@mtwolabs.io">info@mtwolabs.io</a></p>
+          <p>Refunds may be requested within 30 days of purchase by contacting us. Subscriptions can be cancelled at any time and take effect at the end of the current billing period. No cancellation fees apply.</p>
+        </div>
+      </details>
+    </footer>
 
   </div>
 </body>
